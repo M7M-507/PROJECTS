@@ -1,0 +1,278 @@
+
+
+#b1 {
+  margin: 0%;
+  overflow: hidden;
+  
+}
+#img1 {
+  width: 100%;
+  height: 100%;
+}
+#img2 {
+  color: rgba(255, 153, 0, 0);
+  width: 10%;
+  height: 20%;
+  position: relative;
+  bottom: 200%;
+  left: 1.5%;
+}
+#div1 {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.402);
+  color: rgba(0, 0, 0, 0.402);
+  position: relative;
+  bottom: 120%;
+}
+
+.a {
+  text-decoration: none;
+  font-size: 170%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(255, 187, 0);
+  position: relative;
+  bottom: 213%;
+  left: 65%;
+  border-radius: 11%;
+  transition: background-color 0.4s, font-size 0.4s, text-shadow 0.4s;
+  padding: 0.3%;
+  margin: 0.5%;
+}
+.a:hover {
+  background-color: rgba(0, 0, 0, 0.189);
+  font-size: 160%;
+  text-shadow: 1px 18px 11px black;
+}
+#a1 {
+  background-color: rgb(255, 187, 0);
+  color: black;
+  transition: color 0.4s, background-color 0.4s, font-size 0.4s, text-shadow 0.4s;
+}
+#a1:hover {
+  background-color: rgba(0, 0, 0, 0.189);
+  color: rgb(255, 187, 0);
+  font-size: 160%;
+  text-shadow: 1px 18px 11px black;
+}
+#img3 {
+  width: 100%;
+  position: relative;
+  bottom: 207%;
+  text-shadow: 2px 7px 20px black;
+}
+#img4 {
+  position: relative;
+  left: 2.3%;
+  bottom: 220%;
+  width: 4%;
+  height: 8%;
+}
+#h31 {
+  width: 20%;
+  color: rgb(220, 161, 0);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  position: relative;
+  bottom: 226%;
+  left: 6.5%;
+}
+#img5 {
+  position: relative;
+  bottom: 218%;
+  left: 54%;
+  width: 0.4%;
+  height: 78%;
+}
+#img6 {
+  position: relative;
+  bottom: 218%;
+  left: 55%;
+  width: 0.4%;
+  height: 78%;
+}
+#img7 {
+  position: relative;
+  bottom: 235%;
+  left: 63%;
+  width: 32%;
+}
+#h11 {
+  width: 20%;
+  color: rgb(255, 247, 236);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: xxx-large;
+  position: relative;
+  bottom: 285%;
+  left: 3%;
+  text-shadow: 2px 7px 20px black;
+}
+#p1 {
+  width: 45%;
+  color: antiquewhite;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: xx-large;
+  position: relative;
+  bottom: 285%;
+  left: 4%;
+  text-shadow: 2px 7px 20px black;
+}
+#p2 {
+  width: 45%;
+  color: antiquewhite;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: xx-large;
+  position: relative;
+  bottom: 287%;
+  left: 4%;
+  text-shadow: 2px 7px 20px black;
+}
+#p3 {
+  width: 45%;
+  color: antiquewhite;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: xx-large;
+  position: relative;
+  bottom: 289%;
+  left: 4%;
+  text-shadow: 2px 7px 20px black;
+}
+#p4 {
+  width: 45%;
+  color: antiquewhite;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: xx-large;
+  position: relative;
+  bottom: 291%;
+  left: 4%;
+  text-shadow: 2px 7px 20px black;
+}
+#p5 {
+  width: 45%;
+  color: antiquewhite;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: xx-large;
+  position: relative;
+  bottom: 293%;
+  left: 4%;
+  text-shadow: 2px 7px 20px black;
+}
+
+ #h21 {
+  width: 10%;
+  color: #ffc73a;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  position: relative;
+  bottom: 373%;
+  left: 40%;
+}
+.rating {
+  position: relative;
+  bottom: 364%;
+  right: 50%;
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 0.3rem;
+  --stroke: #666;
+  --fill: #ffc73a;
+}
+
+.rating input {
+  appearance: unset;
+}
+
+.rating label {
+  cursor: pointer;
+}
+
+.rating svg {
+  width: 2rem;
+  height: 2rem;
+  overflow: visible;
+  fill: transparent;
+  stroke: var(--stroke);
+  stroke-linejoin: bevel;
+  stroke-dasharray: 12;
+  animation: idle 4s linear infinite;
+  transition: stroke 0.2s, fill 0.5s;
+}
+
+@keyframes idle {
+  from {
+    stroke-dashoffset: 24;
+  }
+}
+
+.rating label:hover svg {
+  stroke: var(--fill);
+}
+
+.rating input:checked ~ label svg {
+  transition: 0s;
+  animation: idle 4s linear infinite, yippee 0.75s backwards;
+  fill: var(--fill);
+  stroke: var(--fill);
+  stroke-opacity: 0;
+  stroke-dasharray: 0;
+  stroke-linejoin: miter;
+  stroke-width: 8px;
+}
+  
+
+@keyframes yippee {
+  0% {
+    transform: scale(1);
+    fill: var(--fill);
+    fill-opacity: 0;
+    stroke-opacity: 1;
+    stroke: var(--stroke);
+    stroke-dasharray: 10;
+    stroke-width: 1px;
+    stroke-linejoin: bevel;
+  }
+
+  30% {
+    transform: scale(0);
+    fill: var(--fill);
+    fill-opacity: 0;
+    stroke-opacity: 1;
+    stroke: var(--stroke);
+    stroke-dasharray: 10;
+    stroke-width: 1px;
+    stroke-linejoin: bevel;
+  }
+
+  30.1% {
+    stroke: var(--fill);
+    stroke-dasharray: 0;
+    stroke-linejoin: miter;
+    stroke-width: 8px;
+  }
+
+  60% {
+    transform: scale(1.2);
+    fill: var(--fill);
+  }
+}
+
+#a3 {
+  background-color: rgb(255, 187, 0);
+  color: black;
+  transition: color 0.4s, background-color 0.4s, font-size 0.4s, text-shadow 0.4s;
+  text-decoration: none;
+  font-size: 230%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  position: relative;
+  bottom: 302%;
+  left: 25%;
+  border-radius: 11%;
+  transition: background-color 0.4s, font-size 0.4s, text-shadow 0.4s;
+  padding: 0.3%;
+  margin: 0.5%;
+}
+#a3:hover {
+  background-color: rgba(0, 0, 0, 0.189);
+  color: rgb(255, 187, 0);
+  font-size: 199%;
+  text-shadow: 1px 18px 11px black;
+}
+
